@@ -1,0 +1,42 @@
+{
+  "name": "deploy-mate",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:testnet": "npx hardhat test --network testnet",
+    "deploy": "npx hardhat deploy --network",
+    "verify": "npx hardhat etherscan-verify --network ropsten",
+    "NOTICE1": "project currently setup to run files individually,",
+    "NOTICE2": "or via master.js which is intended to run multiple files in order",
+    "master": "npx hardhat run scripts/sequence_example.js --network ropsten",
+    "remixd": "remixd -s ./contracts"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.3.0",
+    "hardhat": "^2.6.1",
+    "hardhat-abi-exporter": "2.2.1",
+    "hardhat-contract-sizer": "^2.1.1",
+    "hardhat-deploy": "^0.7.5",
+    "hardhat-deploy-ethers": "^0.3.0-beta.11",
+    "hardhat-log-remover": "^2.0.1",
+    "hardhat-tracer": "^1.0.0-alpha.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@uniswap/sdk": "^3.0.3",
+    "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.3.1",
+    "fs-extra": "^10.0.0",
+    "truffle": "^5.4.21",
+    "truffle-contract-size": "^2.0.1"
+  }
+}

@@ -1,0 +1,6 @@
+build
+abi
+artifacts
+cache
+node_modules
+hardhat.secrets.js
